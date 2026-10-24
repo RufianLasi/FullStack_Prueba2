@@ -74,9 +74,21 @@ main,
 }
 
 /* ==========================================================================
-   4. FORMULARIOS Y TABLAS
+   4. FORMULARIOS (ETIQUETAS VISIBLES, INPUTS Y PLACEHOLDERS)
    ========================================================================== */
 
+/* Etiquetas sobre los campos (Título del Juego, Precio, Stock, etc.) */
+label,
+.form-label,
+.form-check-label {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  margin-bottom: 0.4rem !important;
+  display: inline-block !important;
+  opacity: 1 !important;
+}
+
+/* Campos de entrada (Inputs y Selects) */
 .form-control,
 .form-select {
   background-color: #2a1550 !important;
@@ -93,6 +105,30 @@ main,
   box-shadow: 0 0 0 0.25rem rgba(139, 92, 246, 0.25) !important;
 }
 
+/* Textos de ejemplo dentro de las casillas (Placeholders) */
+.form-control::placeholder,
+input::placeholder,
+textarea::placeholder {
+  color: #c4b5fd !important; /* Púrpura claro brillante y muy legible */
+  opacity: 0.85 !important;
+}
+
+/* Menú desplegable de Plataforma y Categoría */
+.form-select option {
+  background-color: #1a0b36 !important;
+  color: #ffffff !important;
+}
+
+/* Mensajes de validación de error */
+.invalid-feedback {
+  color: #ff6b6b !important;
+  font-weight: 500 !important;
+}
+
+/* ==========================================================================
+   5. TABLAS E INVENTARIO (PANEL DE ADMIN Y CARRITO)
+   ========================================================================== */
+
 .table-dark {
   --bs-table-bg: #211042 !important;
   --bs-table-striped-bg: #28144f !important;
@@ -104,4 +140,9 @@ main,
   background-color: transparent !important;
   color: #ffffff !important;
   border-bottom-color: #3d1c73 !important;
+}
+
+.table th {
+  color: #facc15 !important;
+  font-weight: 600;
 }
