@@ -1,4 +1,3 @@
-// src/pages/Checkout.jsx
 import React, { useState, useContext } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { CartContext } from '../context/CartContext';
@@ -66,7 +65,6 @@ export const Checkout = () => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Limpia el mensaje de error del campo que el usuario está editando
     if (errors[name]) {
       setErrors({ ...errors, [name]: '' });
     }
@@ -75,17 +73,14 @@ export const Checkout = () => {
   const handleSimulatePayment = (success) => {
     setCartAlert('');
 
-    // 1. Validar si el carrito tiene productos
     if (cart.length === 0) {
       setCartAlert('Tu carrito está vacío. Agrega juegos antes de procesar la compra.');
       return;
     }
 
-    // 2. Validar campos del formulario
     const isValid = validateForm();
     if (!isValid) return;
-
-    // 3. Procesar pago
+    
     if (success) {
       const order = createOrder({
         customer: formData,

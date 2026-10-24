@@ -30,37 +30,32 @@ export const AdminDashboard = () => {
     refreshData();
   }, []);
 
-  // validar todos los campos del formulario
   const validateForm = () => {
     const newErrors = {};
 
-    // Validar Título
+
     if (!formData.title.trim()) {
       newErrors.title = 'El título del juego es obligatorio.';
     } else if (formData.title.trim().length < 3) {
       newErrors.title = 'El título debe tener al menos 3 caracteres.';
     }
 
-    // Validar Precio
     if (!formData.price && formData.price !== 0) {
       newErrors.price = 'El precio es obligatorio.';
     } else if (Number(formData.price) <= 0) {
       newErrors.price = 'El precio debe ser un número mayor a 0.';
     }
 
-    // Validar Stock
     if (formData.stock === '' || formData.stock === null) {
       newErrors.stock = 'El stock es obligatorio.';
     } else if (Number(formData.stock) < 0 || !Number.isInteger(Number(formData.stock))) {
       newErrors.stock = 'El stock debe ser un entero mayor o igual a 0.';
     }
 
-    // Validar Categoría
     if (!formData.category.trim()) {
       newErrors.category = 'La categoría es obligatoria.';
     }
 
-    // Validar Imagen
     if (!formData.image.trim()) {
       newErrors.image = 'La URL de la imagen es obligatoria.';
     } else {
@@ -71,7 +66,6 @@ export const AdminDashboard = () => {
       }
     }
 
-    // Validar Oferta (si aplica)
     if (formData.isOffer) {
       if (!formData.offerPrice && formData.offerPrice !== 0) {
         newErrors.offerPrice = 'Ingresa el precio de oferta.';
@@ -95,7 +89,7 @@ export const AdminDashboard = () => {
       [name]: updatedValue
     });
 
-    // Limpiar mensaje de error del campo que se está modificando
+
     if (errors[name]) {
       setErrors({ ...errors, [name]: '' });
     }
@@ -105,7 +99,7 @@ export const AdminDashboard = () => {
     e.preventDefault();
 
     if (!validateForm()) {
-      return; // Detener el envío si hay errores
+      return; 
     }
 
     const formattedProduct = {
