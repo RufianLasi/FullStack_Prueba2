@@ -1,10 +1,10 @@
 // src/App.jsx
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/CartContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
-import './App.css'; // Importación de estilos globales Gamer Violeta
+import './App.css';
 
 import { Home } from './pages/Home';
 import { Carrito } from './pages/Carrito';
