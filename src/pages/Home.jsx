@@ -77,7 +77,7 @@ export const Home = () => {
               className={`btn btn-sm ${filterCategory === cat ? 'btn-warning text-dark fw-bold' : 'btn-outline-light'}`}
               onClick={() => setFilterCategory(cat)}
             >
-              {cat === "OFERTAS" ? "🔥 Ofertas" : cat}
+              {cat === "OFERTAS" ? "Ofertas" : cat}
             </button>
           ))}
         </div>
