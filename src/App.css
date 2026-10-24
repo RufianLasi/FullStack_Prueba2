@@ -51,3 +51,14 @@
   color: #facc15 !important;
   font-weight: 600;
 }
+
+.card {
+  background-color: #212529 !important;
+  color: #ffffff !important;
+  border-color: #495057 !important;
+}
+
+.card-body {
+  background-color: #212529 !important;
+  color: #ffffff !important;
+}
