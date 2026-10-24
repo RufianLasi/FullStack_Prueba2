@@ -1,31 +1,60 @@
+/* ==========================================================================
+   1. FONDO PRINCIPAL DE LA PÁGINA (PÚRPURA PROFUNDO DE LA REFERENCIA)
+   ========================================================================== */
 
-body {
-  background-color: #0d0914 !important;
+html,
+body,
+#root,
+main,
+.min-vh-100 {
+  background-color: #120822 !important; /* Fondo púrpura muy oscuro global */
   color: #ffffff !important;
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+/* ==========================================================================
+   2. BARRA DE NAVEGACIÓN Y BANNERS (CONTENEDORES)
+   ========================================================================== */
+
+.navbar,
+.navbar.bg-dark {
+  background-color: #1a0b36 !important;
+  border-bottom: 1px solid #38186d !important;
+}
+
+/* Banner de Bienvenida y cajas oscuras */
+.p-5.bg-dark,
+.bg-dark {
+  background-color: #1b0e36 !important;
+  border: 1px solid #38186d !important;
+}
+
+/* ==========================================================================
+   3. TARJETAS Y CATÁLOGO (ESTILO PÚRPURA DE REFERENCIA)
+   ========================================================================== */
 
 .card,
 .card-gamestore {
-  background-color: #171226 !important;
-  border: 1px solid #2e224d !important;
+  background-color: #211042 !important;
+  border: 1px solid #3d1c73 !important;
   border-radius: 12px !important;
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover,
 .card-gamestore:hover {
   transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.25) !important;
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.35) !important;
+  border-color: #8b5cf6 !important;
 }
 
 .card-body {
-  background-color: #171226 !important;
+  background-color: #211042 !important;
   color: #ffffff !important;
 }
 
+/* Botones Violetas */
 .btn-purple-gamestore,
 .card .btn-dark {
   background-color: #8b5cf6 !important;
@@ -44,53 +73,35 @@ body {
   transform: scale(1.02);
 }
 
+/* ==========================================================================
+   4. FORMULARIOS Y TABLAS
+   ========================================================================== */
 
 .form-control,
 .form-select {
-  background-color: #231c38 !important;
-  border: 1px solid #3b2e5c !important;
+  background-color: #2a1550 !important;
+  border: 1px solid #4a248c !important;
   color: #ffffff !important;
   border-radius: 8px !important;
 }
 
 .form-control:focus,
 .form-select:focus {
-  background-color: #2a2240 !important;
+  background-color: #32195f !important;
   border-color: #8b5cf6 !important;
   color: #ffffff !important;
   box-shadow: 0 0 0 0.25rem rgba(139, 92, 246, 0.25) !important;
 }
 
-.form-control::placeholder {
-  color: #9ca3af !important;
-}
-
-.form-label {
-  color: #e5e7eb !important;
-  font-weight: 500;
-  margin-bottom: 0.4rem;
-}
-
-.form-select option {
-  background-color: #171226 !important;
-  color: #ffffff !important;
-}
-
-
 .table-dark {
-  --bs-table-bg: #171226 !important;
-  --bs-table-striped-bg: #1f1833 !important;
-  --bs-table-hover-bg: #281f42 !important;
+  --bs-table-bg: #211042 !important;
+  --bs-table-striped-bg: #28144f !important;
+  --bs-table-hover-bg: #32195f !important;
   color: #ffffff !important;
 }
 
 .table > :not(caption) > * > * {
   background-color: transparent !important;
   color: #ffffff !important;
-  border-bottom-color: #2a2240 !important;
-}
-
-.table th {
-  color: #facc15 !important;
-  font-weight: 600;
+  border-bottom-color: #3d1c73 !important;
 }
