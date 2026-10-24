@@ -1,7 +1,3 @@
-/* ==========================================================================
-   1. FONDO PRINCIPAL DE LA PÁGINA (PÚRPURA PROFUNDO GLOBAL)
-   ========================================================================== */
-
 html,
 body,
 #root,
@@ -12,9 +8,6 @@ main,
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* ==========================================================================
-   2. BARRA DE NAVEGACIÓN Y BANNERS
-   ========================================================================== */
 
 .navbar,
 .navbar.bg-dark {
@@ -28,9 +21,6 @@ main,
   border: 1px solid #38186d !important;
 }
 
-/* ==========================================================================
-   3. FOOTER / PIE DE PÁGINA (PÚRPURA OSCURO)
-   ========================================================================== */
 
 footer,
 .footer,
@@ -48,9 +38,6 @@ footer div {
   font-weight: 500;
 }
 
-/* ==========================================================================
-   4. TARJETAS Y CATÁLOGO
-   ========================================================================== */
 
 .card,
 .card-gamestore {
@@ -73,7 +60,6 @@ footer div {
   color: #ffffff !important;
 }
 
-/* Botones Violetas */
 .btn-purple-gamestore,
 .card .btn-dark {
   background-color: #8b5cf6 !important;
@@ -92,9 +78,6 @@ footer div {
   transform: scale(1.02);
 }
 
-/* ==========================================================================
-   5. FORMULARIOS (ETIQUETAS, CAMPOS Y PLACEHOLDERS VISIBLES)
-   ========================================================================== */
 
 label,
 .form-label,
@@ -122,7 +105,6 @@ label,
   box-shadow: 0 0 0 0.25rem rgba(139, 92, 246, 0.25) !important;
 }
 
-/* Placeholders visibles (Ej. Cyberpunk 2077, precios, etc.) */
 .form-control::placeholder,
 input::placeholder,
 textarea::placeholder,
@@ -143,9 +125,6 @@ textarea::placeholder,
   font-weight: 500 !important;
 }
 
-/* ==========================================================================
-   6. TARJETAS DE MÉTRICAS (TITULOS VISIBLES EN PANEL ADMIN)
-   ========================================================================== */
 
 .text-muted,
 .card .text-muted,
@@ -158,10 +137,6 @@ small.text-muted,
   letter-spacing: 0.5px;
   opacity: 1 !important;
 }
-
-/* ==========================================================================
-   7. TABLAS E INVENTARIO
-   ========================================================================== */
 
 .table-dark {
   --bs-table-bg: #211042 !important;
