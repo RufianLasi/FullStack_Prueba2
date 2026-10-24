@@ -1,0 +1,55 @@
+/* src/index.css - Tema Dark Gamer Violeta */
+
+body {
+  background-color: #0b0813 !important;
+  color: #ffffff !important;
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
+}
+
+/* Tarjetas de productos */
+.card {
+  background-color: #171226 !important;
+  border: 1px solid #2a2240 !important;
+  color: #ffffff !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25) !important;
+}
+
+.card-title {
+  color: #ffffff !important;
+}
+
+/* Botones principales estilo Púrpura */
+.btn-dark, .btn-primary {
+  background-color: #8b5cf6 !important;
+  border-color: #8b5cf6 !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+.btn-dark:hover, .btn-primary:hover {
+  background-color: #7c3aed !important;
+  border-color: #7c3aed !important;
+}
+
+/* Precios en color Amarillo / Dorado */
+.text-success {
+  color: #facc15 !important;
+}
+
+/* Títulos y banners */
+.bg-dark {
+  background-color: #130e20 !important;
+  border: 1px solid #2a2240;
+}
+
+/* Adaptación de navegación y contenedor */
+.navbar, header {
+  background-color: #130e20 !important;
+  border-bottom: 1px solid #2a2240;
+}
