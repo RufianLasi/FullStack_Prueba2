@@ -1,11 +1,60 @@
-/* Estilos para Formularios y Campos de Entrada en Modo Oscuro */
-.form-control, .form-select {
-  background-color: #231c38 !important;
-  border: 1px solid #3b2e5c !important;
+
+body {
+  background-color: #0d0914 !important;
+  color: #ffffff !important;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+
+.card,
+.card-gamestore {
+  background-color: #171226 !important;
+  border: 1px solid #2e224d !important;
+  border-radius: 12px !important;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.card-gamestore:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(139, 92, 246, 0.25) !important;
+}
+
+.card-body {
+  background-color: #171226 !important;
   color: #ffffff !important;
 }
 
-.form-control:focus, .form-select:focus {
+.btn-purple-gamestore,
+.card .btn-dark {
+  background-color: #8b5cf6 !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 600 !important;
+  border-radius: 8px !important;
+  padding: 10px 16px !important;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-purple-gamestore:hover,
+.card .btn-dark:hover {
+  background-color: #7c3aed !important;
+  color: #ffffff !important;
+  transform: scale(1.02);
+}
+
+
+.form-control,
+.form-select {
+  background-color: #231c38 !important;
+  border: 1px solid #3b2e5c !important;
+  color: #ffffff !important;
+  border-radius: 8px !important;
+}
+
+.form-control:focus,
+.form-select:focus {
   background-color: #2a2240 !important;
   border-color: #8b5cf6 !important;
   color: #ffffff !important;
@@ -22,18 +71,12 @@
   margin-bottom: 0.4rem;
 }
 
-/* Opciones de los desplegables (Select) */
 .form-select option {
   background-color: #171226 !important;
   color: #ffffff !important;
 }
 
-/* Ajuste de contenedor de tarjeta en formularios */
-.card-body {
-  color: #ffffff !important;
-}
 
-/* Estilos para Tablas e Inventario en Modo Oscuro */
 .table-dark {
   --bs-table-bg: #171226 !important;
   --bs-table-striped-bg: #1f1833 !important;
@@ -50,15 +93,4 @@
 .table th {
   color: #facc15 !important;
   font-weight: 600;
-}
-
-.card {
-  background-color: #212529 !important;
-  color: #ffffff !important;
-  border-color: #495057 !important;
-}
-
-.card-body {
-  background-color: #212529 !important;
-  color: #ffffff !important;
 }
