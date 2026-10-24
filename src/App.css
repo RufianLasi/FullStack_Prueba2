@@ -1,55 +1,53 @@
-/* src/index.css - Tema Dark Gamer Violeta */
-
-body {
-  background-color: #0b0813 !important;
-  color: #ffffff !important;
-  font-family: system-ui, -apple-system, sans-serif;
-  min-height: 100vh;
-}
-
-/* Tarjetas de productos */
-.card {
-  background-color: #171226 !important;
-  border: 1px solid #2a2240 !important;
-  color: #ffffff !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25) !important;
-}
-
-.card-title {
+/* Estilos para Formularios y Campos de Entrada en Modo Oscuro */
+.form-control, .form-select {
+  background-color: #231c38 !important;
+  border: 1px solid #3b2e5c !important;
   color: #ffffff !important;
 }
 
-/* Botones principales estilo Púrpura */
-.btn-dark, .btn-primary {
-  background-color: #8b5cf6 !important;
+.form-control:focus, .form-select:focus {
+  background-color: #2a2240 !important;
   border-color: #8b5cf6 !important;
   color: #ffffff !important;
-  font-weight: 600 !important;
+  box-shadow: 0 0 0 0.25rem rgba(139, 92, 246, 0.25) !important;
 }
 
-.btn-dark:hover, .btn-primary:hover {
-  background-color: #7c3aed !important;
-  border-color: #7c3aed !important;
+.form-control::placeholder {
+  color: #9ca3af !important;
 }
 
-/* Precios en color Amarillo / Dorado */
-.text-success {
+.form-label {
+  color: #e5e7eb !important;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+/* Opciones de los desplegables (Select) */
+.form-select option {
+  background-color: #171226 !important;
+  color: #ffffff !important;
+}
+
+/* Ajuste de contenedor de tarjeta en formularios */
+.card-body {
+  color: #ffffff !important;
+}
+
+/* Estilos para Tablas e Inventario en Modo Oscuro */
+.table-dark {
+  --bs-table-bg: #171226 !important;
+  --bs-table-striped-bg: #1f1833 !important;
+  --bs-table-hover-bg: #281f42 !important;
+  color: #ffffff !important;
+}
+
+.table > :not(caption) > * > * {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border-bottom-color: #2a2240 !important;
+}
+
+.table th {
   color: #facc15 !important;
-}
-
-/* Títulos y banners */
-.bg-dark {
-  background-color: #130e20 !important;
-  border: 1px solid #2a2240;
-}
-
-/* Adaptación de navegación y contenedor */
-.navbar, header {
-  background-color: #130e20 !important;
-  border-bottom: 1px solid #2a2240;
+  font-weight: 600;
 }
